@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lalasia</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f5f5f5;
+        color: #333;
+      }
+
+      .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+      }
+
+      .logo {
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .nav {
+        display: flex;
+        list-style: none;
+      }
+
+      .nav a {
+        text-decoration: none;
+        color: #fff;
+        margin-right: 20px;
+        font-weight: bold;
+        font-size: 16px;
+      }
+
+      .banner {
+        position: relative;
+        width: 100%;
+        height: 500px;
+        overflow: hidden;
+      }
+
+      .banner img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .banner h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 48px;
+        color: #fff;
+        text-align: center;
+      }
+
+      .banner button {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+        border: none;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.8);
+        cursor: pointer;
+        font-size: 20px;
+      }
+
+      .intro {
+        padding: 20px;
+        text-align: center;
+      }
+
+      .intro p {
+        font-size: 18px;
+        color: #333;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .services {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        padding: 20px;
+      }
+
+      .service-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #eee;
+        padding: 20px;
+        border-radius: 8px;
+      }
+
+      .service-item i {
+        font-size: 32px;
+        color: #ffd700;
+        margin-bottom: 10px;
+      }
+
+      .service-item h3 {
+        font-size: 18px;
+        color: #333;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .service-item p {
+        font-size: 14px;
+        color: #666;
+        text-align: center;
+      }
+
+      #banner-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+      }
+
+      #banner-overlay h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+
+      #banner-overlay p {
+        font-size: 18px;
+        margin-bottom: 30px;
+      }
+
+      #banner-overlay img {
+        width: 80%;
+        max-width: 600px;
+        height: auto;
+        border-radius: 8px;
+      }
+
+      #content {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 20px;
+      }
+
+      #content section {
+        width: 30%;
+        padding: 10px;
+      }
+
+      #content h2 {
+        font-size: 25px;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+
+      #content p {
+        font-size: 18px;
+        text-align: justify;
+        margin-bottom: 20px;
+      }
+
+      .icon {
+        display: flex;
+        align-items: center;
+        margin: 10px;
+      }
+
+      .icon img {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+      }
+
+      .icon span {
+        font-size: 20px;
+      }
+
+      .user-actions {
+        display: flex;
+        align-items: center;
+      }
+
+      .user-actions i {
+        font-size: 24px;
+        color: #333;
+        margin-left: 20px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="logo">Lalasia</div>
+      <ul class="nav">
+        <li><a href="#">Product</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Article</a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+      <div class="user-actions">
+        <i class="fas fa-shopping-cart"></i>
+        <i class="fas fa-user"></i>
+      </div>
+    </div>
+
+    <div class="banner">
+      <img src="" alt="Banner Image" />
+      <h1>Welcome to Lalasia</h1>
+      <button>&#9654;</button>
+      <div id="banner-overlay">
+        <h1>About Us</h1>
+        <p>
+          We display products based on the best products we have. If you want to
+          see our old products, please enter the name of the item.
+        </p>
+        <img src="" alt="Overlay Image" />
+      </div>
+    </div>
+
+    <div class="intro">
+      <p>
+        Introducing Lalasia, where creativity meets innovation. Explore our
+        world and experience excellence.
+      </p>
+    </div>
+
+    <div class="services">
+      <div class="service-item">
+        <i class="fas fa-cogs"></i>
+        <h3>Product Development</h3>
+        <p>We craft cutting-edge products tailored to your needs.</p>
+      </div>
+
+      <div class="service-item">
+        <i class="fas fa-handshake"></i>
+        <h3>Services</h3>
+        <p>Discover our range of services designed to elevate your business.</p>
+      </div>
+
+      <div class="service-item">
+        <i class="fas fa-newspaper"></i>
+        <h3>Articles</h3>
+        <p>Stay informed with our insightful articles on various topics.</p>
+      </div>
+
+      <div class="service-item">
+        <i class="fas fa-info-circle"></i>
+        <h3>About Us</h3>
+        <p>Learn more about Lalasia and our commitment to excellence.</p>
+      </div>
+    </div>
+
+    <div id="content">
+      <section id="team">
+        <h2>Our team dedicated to helping you find smart home products</h2>
+        <div class="icon">
+          <img src="" alt="Experience icon" />
+          <span>20+ Years Experience</span>
+        </div>
+        <div class="icon">
+          <img src="" alt="Client icon" />
+          <span>483 Happy Clients</span>
+        </div>
+        <div class="icon">
+          <img src="" alt="Project icon" />
+          <span>150+ Projects Finished</span>
+        </div>
+      </section>
+
+      <section id="support">
+        <h2>24/7 Support</h2>
+        <p>
+          24/7 support means a service that is provided 24 hours a day and 7
+          days a week.
+        </p>
+      </section>
+
+      <section id="consultation">
+        <h2>Free Consultation</h2>
+        <p>
+          A free consultation is a one-on-one interaction by which one person
+          aims to gain advice or information from another.
+        </p>
+      </section>
+    </div>
+  </body>
+</html>
